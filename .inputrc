@@ -1,3 +1,5 @@
+# Mike Oglesby's .inputrc
+
 $include /etc/inputrc
 
 ## arrow up

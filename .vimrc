@@ -1,3 +1,5 @@
+" Mike Oglesby's .vimrc
+
 " My stuff:
 
 if has("syntax")
