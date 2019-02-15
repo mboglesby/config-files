@@ -1,7 +1,7 @@
 # Mike Oglesby's .bashrc
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-. $(brew --prefix)/etc/bash_completion
+if [ `command -v brew` ] && [ -f $(brew --prefix)/etc/bash_completion ]; then
+	. $(brew --prefix)/etc/bash_completion
 fi
 
 #export PS1="\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
@@ -14,7 +14,7 @@ export EDITOR=vim
 alias ..='cd ..'
 alias ...='cd ../..'
 
-alias ls='ls -GF'
+alias ls='ls -GF --color=auto'
 alias ll='ls -lah'
 alias la='ls -A'
 
