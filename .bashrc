@@ -24,7 +24,7 @@ if [ $(uname -s) = "Darwin" ]; then
 else
 	alias ls='ls -F --color=auto'
 fi
-alias ll='ls -lah'
+alias ll='ls -lAh'
 alias la='ls -A'
 
 # Create grep aliases
